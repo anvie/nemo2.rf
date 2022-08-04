@@ -3,13 +3,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import jwt from "jsonwebtoken";
 import getConfig from "next/config";
 
-const db = require("../../lib/db");
-
 const { serverRuntimeConfig } = getConfig();
 
 import { generateCode } from "../../lib/auth";
-
-const messageFormat = "Please sign this message to ensure you have access to your RSVPs."
 
 type Data = {
   error?: string | null;

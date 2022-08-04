@@ -1,4 +1,3 @@
-const db = require("./db");
 
 /**
  * Unsafe code generation, for OTP only.
