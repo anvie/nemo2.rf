@@ -17,7 +17,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta property="title" content="$name$" />
-          <meta property="og:url" content="https://example.com" />
+          <meta property="og:url" content="$param.base_url$" />
           <meta property="og:type" content="website" />
 
           <meta property="og:title" content="$name$" />
@@ -60,7 +60,7 @@ class MyDocument extends Document {
 
           {/* --- Twitter Meta Tags --- */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="https://example.com" />
+          <meta property="twitter:domain" content="$param.base_url$" />
           <meta
             property="twitter:url"
             content="$param.base_url$"
@@ -77,8 +77,6 @@ class MyDocument extends Document {
           {/* --- Twitter Meta Tags ends --- */}
         </Head>
         <body>
-          <div className="bg1 w-full"></div>
-          <div className="bg2 w-full"></div>
           <Main />
           <NextScript />
         </body>

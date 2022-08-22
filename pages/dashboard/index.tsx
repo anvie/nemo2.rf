@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <title>$name$</title>
         <meta
           name="description"
-          content="$param.name$"
+          content="$param.description$"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
