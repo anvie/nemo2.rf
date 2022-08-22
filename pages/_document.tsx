@@ -17,7 +17,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta property="title" content="$name$" />
-          <meta property="og:url" content="https://example.com" />
+          <meta property="og:url" content="$param.base_url$" />
           <meta property="og:type" content="website" />
 
           <meta property="og:title" content="$name$" />
